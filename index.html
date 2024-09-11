@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Personal Portfolio Website Design | Aditya</title>
     <!-- box icons link -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -153,17 +153,52 @@
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email Address">
+                <div class="error text">Name & Email Can't be Blank</div>
             </div>
 
             <div class="input-box">
             <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="text" placeholder="Domain">
+            <div class="error text">Mobile & Domain Can't be Blank</div>
             </div>
             
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="error text">Message Can't be Blank</div>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+
+
+    <!-- <section class="contact">
+        <h2>Contact Me!</h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"
+                    autocomplete="off"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section> -->
+
+
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
@@ -175,7 +210,9 @@
     </footer>
 
 
+
     <!-- custom js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 
