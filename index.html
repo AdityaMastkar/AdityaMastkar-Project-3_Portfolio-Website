@@ -39,7 +39,8 @@
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a>
                 <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="CV.Adi.pdf" download="Download CV" class="btn">Download CV</a>
+            
         </div>
         <div class="home-img">
             <img src="images/home.png" alt="">
@@ -149,24 +150,32 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6fe5f0b8-daf7-405d-85ed-19bd33adb579">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-                <div class="error text">Name & Email Can't be Blank</div>
+                <!-- <input type="text" placeholder="Full Name"> -->
+                <input type="text" placeholder="name" required>
+                <!-- <input type="email" placeholder="Email Address"> -->
+                <input type="email" placeholder="email" required>
+            </div>
+                
+            <div class="input-box">
+                    <!-- <input type="number" placeholder="Mobile Number"> -->
+                    <input type="text" placeholder="Mobile Number" required>
+
+                    <!-- <input type="text" placeholder="Domain"> -->
+                    <input type="text" placeholder="Domain" required>
+
             </div>
 
-            <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Domain">
-            <div class="error text">Mobile & Domain Can't be Blank</div>
-            </div>
-            
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <div class="error text">Message Can't be Blank</div>
+            <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea> -->
+            <textarea name="message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
+    
         </form>
     </section>
+
+  <!-- contact section design -->
 
 
     <!-- <section class="contact">
