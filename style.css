@@ -352,15 +352,12 @@ span {
 }
 
 .portfolio {
-    background: var(--bg-color);
-    padding: 8rem;
-
+    background: var(--second-bg-color);
 
 }
 
 .portfolio h2 {
-    margin-bottom: 3.8rem;
-    height: 4rem;
+    margin-bottom:4rem;
 
 }
 
@@ -375,18 +372,18 @@ span {
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
 }
 
 .portfolio-box img {
     width: 100%;
-    transition: .2s ease;
+    transition: .5s ease;
 }
 
 .portfolio-box:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .portfolio-box .portfolio-layer {
@@ -395,21 +392,20 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--second-bg-color));
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 1rem;
-    transform: translateY(0);
+    padding: 0 4rem;
+    transform: translateY(100%);
     transition: .5s ease;
 
 
 }
 
-.portfolio-box:hover,
-.portfolio-layer {
+.portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 }
 
@@ -428,7 +424,7 @@ span {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: var(--main-color);
+    background-color: var(--text-color);
     border-radius: 50%;
 
 }
@@ -437,9 +433,9 @@ span {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
-
+ 
 .contact h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -480,8 +476,7 @@ span {
 .contact form .input-box input:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
-    box-shadow: none;
-
+    box-shadow:none;
 
 }
 
@@ -504,64 +499,7 @@ span {
     transform: scale(1.18);
     box-shadow: 0 0 1rem var(--main-color);
 
-}
-/* .contact h2 {
-    font-size: 40px;
-    color: #ededed;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.contact form {
-    width: 600px;
-    text-align: center;
-}
-
-form .input-box {
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-box .input-field {
-    width: 48.5%;
-    margin: 0 1%;
-}
-
-.field .item {
-    width: 100%;
-    padding: 18px;
-    background: transparent;
-    border: 2px solid #0ef;
-    outline: none;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #ededed;
-    margin: 12px 0;
-}
-
-.field .item::placeholder {
-    color: rgba(255, 255, 255, .3);
-}
-
-form .textarea-field .item {
-    resize: none;
-}
-
-form button {
-    padding: 12px 32px;
-    background: #0ef;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    box-shadow: 0 10px #0ef;
-    font-size: 16px;
-    color: #333;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 20px;
-} */
-
+}  
 
 .footer {
     display: flex;
