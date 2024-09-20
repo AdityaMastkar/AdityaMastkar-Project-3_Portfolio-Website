@@ -1,10 +1,11 @@
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector(' .navbar');
+let navbar = document.querySelector('.navbar');
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-};
+  };
 
 
 let sections = document.querySelectorAll('section');
@@ -19,7 +20,7 @@ window.onscroll = () => {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href *= ' + id + ']').classList.add('active');
-            }); I
+            }); 
         };
     });
 
@@ -27,25 +28,28 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    menuIcon.classList.replace('bx-menu', 'bx-x');
+    navbar.classList.toggle('active', false);
 };
 
-// BREAKPOINTS//
+    ScrollReveal({
+        //  reset: true, 
+         distance: '80px',
+         duration: 2000,
+         delay: 200
+        
+    });
 
-// @media (max-width: 1200px) {
-//     html {
-//         font-size: 55%;
-//     }
-// }
-// @media (max-width: 991px) {
-//     .header {
-//         padding: 2rem 3%;
-//     }
-//     section {
-//         padding: 10rem 3% 2rem;
-//     }
-//     .footer {
-//         padding: 2rem 3%;
-//     }
-// }
+    ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+    ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact-form', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+    ScrollReveal().reveal('.input-box', { origin: 'bottom' });
+
+    const typed =new Typed ('.multiple-text', {
+        strings: ['FrontEnd Developer', 'Web Developer', 'Video Editor'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    })
