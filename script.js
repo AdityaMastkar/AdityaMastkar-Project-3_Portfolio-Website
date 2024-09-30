@@ -45,6 +45,8 @@ window.onscroll = () => {
     ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
     ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
     ScrollReveal().reveal('.input-box', { origin: 'bottom' });
+    ScrollReveal().reveal('.education-column', {origin: 'bottom'});
+    ScrollReveal().reveal('.skills-column', {origin: 'left'});
 
     const typed =new Typed ('.multiple-text', {
         strings: ['FrontEnd Developer', 'Web Developer', 'Video Editor'],
